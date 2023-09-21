@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		140F49C12AB2F5D800FF302D /* VBeaconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140F49C02AB2F5D800FF302D /* VBeaconModel.swift */; };
+		140F49C32AB32EC300FF302D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 140F49C22AB32EC300FF302D /* GoogleService-Info.plist */; };
+		140F49C62AB32FC400FF302D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 140F49C52AB32FC400FF302D /* FirebaseAnalytics */; };
+		140F49C82AB32FC400FF302D /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 140F49C72AB32FC400FF302D /* FirebaseCrashlytics */; };
+		140F49CA2AB32FC400FF302D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 140F49C92AB32FC400FF302D /* FirebaseDatabase */; };
+		140F49CC2AB32FC400FF302D /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 140F49CB2AB32FC400FF302D /* FirebaseDatabaseSwift */; };
+		140F49CE2AB32FC400FF302D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 140F49CD2AB32FC400FF302D /* FirebaseStorage */; };
+		140F49D02AB32FC400FF302D /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 140F49CF2AB32FC400FF302D /* FirebaseStorageCombine-Community */; };
+		14DB029A2A94973A00176517 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB02992A94973A00176517 /* AppDelegate.swift */; };
+		14DB029C2A94973A00176517 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB029B2A94973A00176517 /* SceneDelegate.swift */; };
+		14DB029E2A94973A00176517 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB029D2A94973A00176517 /* ViewController.swift */; };
+		14DB02A12A94973A00176517 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DB029F2A94973A00176517 /* Main.storyboard */; };
+		14DB02A32A94973C00176517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DB02A22A94973C00176517 /* Assets.xcassets */; };
+		14DB02A62A94973C00176517 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DB02A42A94973C00176517 /* LaunchScreen.storyboard */; };
+		14DB02B12A94973D00176517 /* Mist_PoCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB02B02A94973D00176517 /* Mist_PoCTests.swift */; };
+		14DB02BB2A94973D00176517 /* Mist_PoCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB02BA2A94973D00176517 /* Mist_PoCUITests.swift */; };
+		14DB02BD2A94973D00176517 /* Mist_PoCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB02BC2A94973D00176517 /* Mist_PoCUITestsLaunchTests.swift */; };
+		14DB02CB2A949A5400176517 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB02CA2A949A5400176517 /* Constants.swift */; };
+		14DB02CE2A95DB4400176517 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB02CD2A95DB4400176517 /* ViewModel.swift */; };
+		14DB02D12A95F6D400176517 /* MistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB02D02A95F6D400176517 /* MistService.swift */; };
+		14DB02D32A95FAAA00176517 /* WakeUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB02D22A95FAAA00176517 /* WakeUpService.swift */; };
+		14DB02D52A95FFF700176517 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB02D42A95FFF700176517 /* Notification.swift */; };
+		14DB02D72A96014500176517 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB02D62A96014500176517 /* String.swift */; };
+		14DB02D92A96016400176517 /* BeaconRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB02D82A96016400176517 /* BeaconRegion.swift */; };
+		3DDC81F1F3C6557D79CB2F11 /* libPods-Mist-PoCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AFA7BA5D120A32C452E8FB /* libPods-Mist-PoCTests.a */; };
+		46DFF0CFDE5AA0AF6CE81EC6 /* libPods-Mist-PoC-Mist-PoCUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF670B61625810D975D6D6C /* libPods-Mist-PoC-Mist-PoCUITests.a */; };
+		68B51C2BFEA536AF729BDCCA /* libPods-Mist-PoC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB79224A4226E5702FB492A5 /* libPods-Mist-PoC.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14DB02AD2A94973D00176517 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14DB028E2A94973A00176517 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14DB02952A94973A00176517;
+			remoteInfo = "Mist-PoC";
+		};
+		14DB02B72A94973D00176517 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14DB028E2A94973A00176517 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14DB02952A94973A00176517;
+			remoteInfo = "Mist-PoC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C56DB7C03DF594D4D20014B /* Pods-Mist-PoC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mist-PoC.debug.xcconfig"; path = "Target Support Files/Pods-Mist-PoC/Pods-Mist-PoC.debug.xcconfig"; sourceTree = "<group>"; };
+		140F49C02AB2F5D800FF302D /* VBeaconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VBeaconModel.swift; sourceTree = "<group>"; };
+		140F49C22AB32EC300FF302D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		14DB02962A94973A00176517 /* Mist-PoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mist-PoC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DB02992A94973A00176517 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14DB029B2A94973A00176517 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		14DB029D2A94973A00176517 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14DB02A02A94973A00176517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14DB02A22A94973C00176517 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14DB02A52A94973C00176517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14DB02A72A94973C00176517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14DB02AC2A94973D00176517 /* Mist-PoCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mist-PoCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DB02B02A94973D00176517 /* Mist_PoCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mist_PoCTests.swift; sourceTree = "<group>"; };
+		14DB02B62A94973D00176517 /* Mist-PoCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mist-PoCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DB02BA2A94973D00176517 /* Mist_PoCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mist_PoCUITests.swift; sourceTree = "<group>"; };
+		14DB02BC2A94973D00176517 /* Mist_PoCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mist_PoCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		14DB02CA2A949A5400176517 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		14DB02CD2A95DB4400176517 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		14DB02D02A95F6D400176517 /* MistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MistService.swift; sourceTree = "<group>"; };
+		14DB02D22A95FAAA00176517 /* WakeUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpService.swift; sourceTree = "<group>"; };
+		14DB02D42A95FFF700176517 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		14DB02D62A96014500176517 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		14DB02D82A96016400176517 /* BeaconRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconRegion.swift; sourceTree = "<group>"; };
+		4DDB42772336DA477F0BD027 /* Pods-Mist-PoC-Mist-PoCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mist-PoC-Mist-PoCUITests.debug.xcconfig"; path = "Target Support Files/Pods-Mist-PoC-Mist-PoCUITests/Pods-Mist-PoC-Mist-PoCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C4193FB183357ACF2D4F388 /* Pods-Mist-PoCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mist-PoCTests.debug.xcconfig"; path = "Target Support Files/Pods-Mist-PoCTests/Pods-Mist-PoCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AF670B61625810D975D6D6C /* libPods-Mist-PoC-Mist-PoCUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mist-PoC-Mist-PoCUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F1DCBB1C4564F4AB54F592C /* Pods-Mist-PoCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mist-PoCTests.release.xcconfig"; path = "Target Support Files/Pods-Mist-PoCTests/Pods-Mist-PoCTests.release.xcconfig"; sourceTree = "<group>"; };
+		B1FE0F43429B0631D40CC543 /* Pods-Mist-PoC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mist-PoC.release.xcconfig"; path = "Target Support Files/Pods-Mist-PoC/Pods-Mist-PoC.release.xcconfig"; sourceTree = "<group>"; };
+		C5776EA3E5907FF99A6D3AA5 /* Pods-Mist-PoC-Mist-PoCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mist-PoC-Mist-PoCUITests.release.xcconfig"; path = "Target Support Files/Pods-Mist-PoC-Mist-PoCUITests/Pods-Mist-PoC-Mist-PoCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E3AFA7BA5D120A32C452E8FB /* libPods-Mist-PoCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mist-PoCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB79224A4226E5702FB492A5 /* libPods-Mist-PoC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mist-PoC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14DB02932A94973A00176517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				140F49CC2AB32FC400FF302D /* FirebaseDatabaseSwift in Frameworks */,
+				140F49D02AB32FC400FF302D /* FirebaseStorageCombine-Community in Frameworks */,
+				140F49C82AB32FC400FF302D /* FirebaseCrashlytics in Frameworks */,
+				140F49C62AB32FC400FF302D /* FirebaseAnalytics in Frameworks */,
+				140F49CA2AB32FC400FF302D /* FirebaseDatabase in Frameworks */,
+				68B51C2BFEA536AF729BDCCA /* libPods-Mist-PoC.a in Frameworks */,
+				140F49CE2AB32FC400FF302D /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DB02A92A94973D00176517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DDC81F1F3C6557D79CB2F11 /* libPods-Mist-PoCTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DB02B32A94973D00176517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DFF0CFDE5AA0AF6CE81EC6 /* libPods-Mist-PoC-Mist-PoCUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14DB028D2A94973A00176517 = {
+			isa = PBXGroup;
+			children = (
+				14DB02982A94973A00176517 /* Mist-PoC */,
+				14DB02AF2A94973D00176517 /* Mist-PoCTests */,
+				14DB02B92A94973D00176517 /* Mist-PoCUITests */,
+				14DB02972A94973A00176517 /* Products */,
+				DF359B42F2AB0640DE6559D5 /* Pods */,
+				30F15AF5ECF62A8154C4D6DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		14DB02972A94973A00176517 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14DB02962A94973A00176517 /* Mist-PoC.app */,
+				14DB02AC2A94973D00176517 /* Mist-PoCTests.xctest */,
+				14DB02B62A94973D00176517 /* Mist-PoCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14DB02982A94973A00176517 /* Mist-PoC */ = {
+			isa = PBXGroup;
+			children = (
+				140F49C22AB32EC300FF302D /* GoogleService-Info.plist */,
+				14DB02CF2A95F6BE00176517 /* Service */,
+				14DB02CC2A95D55C00176517 /* UI */,
+				14DB02C92A949A3B00176517 /* Utilities */,
+				14DB02992A94973A00176517 /* AppDelegate.swift */,
+				14DB029B2A94973A00176517 /* SceneDelegate.swift */,
+				14DB029F2A94973A00176517 /* Main.storyboard */,
+				14DB02A22A94973C00176517 /* Assets.xcassets */,
+				14DB02A42A94973C00176517 /* LaunchScreen.storyboard */,
+				14DB02A72A94973C00176517 /* Info.plist */,
+			);
+			path = "Mist-PoC";
+			sourceTree = "<group>";
+		};
+		14DB02AF2A94973D00176517 /* Mist-PoCTests */ = {
+			isa = PBXGroup;
+			children = (
+				14DB02B02A94973D00176517 /* Mist_PoCTests.swift */,
+			);
+			path = "Mist-PoCTests";
+			sourceTree = "<group>";
+		};
+		14DB02B92A94973D00176517 /* Mist-PoCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14DB02BA2A94973D00176517 /* Mist_PoCUITests.swift */,
+				14DB02BC2A94973D00176517 /* Mist_PoCUITestsLaunchTests.swift */,
+			);
+			path = "Mist-PoCUITests";
+			sourceTree = "<group>";
+		};
+		14DB02C92A949A3B00176517 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				14DB02CA2A949A5400176517 /* Constants.swift */,
+				14DB02D42A95FFF700176517 /* Notification.swift */,
+				14DB02D62A96014500176517 /* String.swift */,
+				14DB02D82A96016400176517 /* BeaconRegion.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		14DB02CC2A95D55C00176517 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				14DB029D2A94973A00176517 /* ViewController.swift */,
+				14DB02CD2A95DB4400176517 /* ViewModel.swift */,
+				140F49C02AB2F5D800FF302D /* VBeaconModel.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		14DB02CF2A95F6BE00176517 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				14DB02D02A95F6D400176517 /* MistService.swift */,
+				14DB02D22A95FAAA00176517 /* WakeUpService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		30F15AF5ECF62A8154C4D6DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB79224A4226E5702FB492A5 /* libPods-Mist-PoC.a */,
+				6AF670B61625810D975D6D6C /* libPods-Mist-PoC-Mist-PoCUITests.a */,
+				E3AFA7BA5D120A32C452E8FB /* libPods-Mist-PoCTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF359B42F2AB0640DE6559D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C56DB7C03DF594D4D20014B /* Pods-Mist-PoC.debug.xcconfig */,
+				B1FE0F43429B0631D40CC543 /* Pods-Mist-PoC.release.xcconfig */,
+				4DDB42772336DA477F0BD027 /* Pods-Mist-PoC-Mist-PoCUITests.debug.xcconfig */,
+				C5776EA3E5907FF99A6D3AA5 /* Pods-Mist-PoC-Mist-PoCUITests.release.xcconfig */,
+				5C4193FB183357ACF2D4F388 /* Pods-Mist-PoCTests.debug.xcconfig */,
+				9F1DCBB1C4564F4AB54F592C /* Pods-Mist-PoCTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14DB02952A94973A00176517 /* Mist-PoC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DB02C02A94973D00176517 /* Build configuration list for PBXNativeTarget "Mist-PoC" */;
+			buildPhases = (
+				28F48636C8E4788B6E82858E /* [CP] Check Pods Manifest.lock */,
+				14DB02922A94973A00176517 /* Sources */,
+				14DB02932A94973A00176517 /* Frameworks */,
+				14DB02942A94973A00176517 /* Resources */,
+				9EB1F8B3FB49F9D8E0F1F99F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mist-PoC";
+			packageProductDependencies = (
+				140F49C52AB32FC400FF302D /* FirebaseAnalytics */,
+				140F49C72AB32FC400FF302D /* FirebaseCrashlytics */,
+				140F49C92AB32FC400FF302D /* FirebaseDatabase */,
+				140F49CB2AB32FC400FF302D /* FirebaseDatabaseSwift */,
+				140F49CD2AB32FC400FF302D /* FirebaseStorage */,
+				140F49CF2AB32FC400FF302D /* FirebaseStorageCombine-Community */,
+			);
+			productName = "Mist-PoC";
+			productReference = 14DB02962A94973A00176517 /* Mist-PoC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14DB02AB2A94973D00176517 /* Mist-PoCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DB02C32A94973D00176517 /* Build configuration list for PBXNativeTarget "Mist-PoCTests" */;
+			buildPhases = (
+				8E5654395F9F70EC1CE9283D /* [CP] Check Pods Manifest.lock */,
+				14DB02A82A94973D00176517 /* Sources */,
+				14DB02A92A94973D00176517 /* Frameworks */,
+				14DB02AA2A94973D00176517 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14DB02AE2A94973D00176517 /* PBXTargetDependency */,
+			);
+			name = "Mist-PoCTests";
+			productName = "Mist-PoCTests";
+			productReference = 14DB02AC2A94973D00176517 /* Mist-PoCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14DB02B52A94973D00176517 /* Mist-PoCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DB02C62A94973D00176517 /* Build configuration list for PBXNativeTarget "Mist-PoCUITests" */;
+			buildPhases = (
+				0B1493A23DD4896346D055DB /* [CP] Check Pods Manifest.lock */,
+				14DB02B22A94973D00176517 /* Sources */,
+				14DB02B32A94973D00176517 /* Frameworks */,
+				14DB02B42A94973D00176517 /* Resources */,
+				0D92B988165F0FB54C5EB15D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14DB02B82A94973D00176517 /* PBXTargetDependency */,
+			);
+			name = "Mist-PoCUITests";
+			productName = "Mist-PoCUITests";
+			productReference = 14DB02B62A94973D00176517 /* Mist-PoCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14DB028E2A94973A00176517 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					14DB02952A94973A00176517 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					14DB02AB2A94973D00176517 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 14DB02952A94973A00176517;
+					};
+					14DB02B52A94973D00176517 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 14DB02952A94973A00176517;
+					};
+				};
+			};
+			buildConfigurationList = 14DB02912A94973A00176517 /* Build configuration list for PBXProject "Mist-PoC" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14DB028D2A94973A00176517;
+			packageReferences = (
+				140F49C42AB32FC400FF302D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 14DB02972A94973A00176517 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14DB02952A94973A00176517 /* Mist-PoC */,
+				14DB02AB2A94973D00176517 /* Mist-PoCTests */,
+				14DB02B52A94973D00176517 /* Mist-PoCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14DB02942A94973A00176517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DB02A62A94973C00176517 /* LaunchScreen.storyboard in Resources */,
+				140F49C32AB32EC300FF302D /* GoogleService-Info.plist in Resources */,
+				14DB02A32A94973C00176517 /* Assets.xcassets in Resources */,
+				14DB02A12A94973A00176517 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DB02AA2A94973D00176517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DB02B42A94973D00176517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B1493A23DD4896346D055DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mist-PoC-Mist-PoCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D92B988165F0FB54C5EB15D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mist-PoC-Mist-PoCUITests/Pods-Mist-PoC-Mist-PoCUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mist-PoC-Mist-PoCUITests/Pods-Mist-PoC-Mist-PoCUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mist-PoC-Mist-PoCUITests/Pods-Mist-PoC-Mist-PoCUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28F48636C8E4788B6E82858E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mist-PoC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E5654395F9F70EC1CE9283D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mist-PoCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EB1F8B3FB49F9D8E0F1F99F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mist-PoC/Pods-Mist-PoC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mist-PoC/Pods-Mist-PoC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mist-PoC/Pods-Mist-PoC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14DB02922A94973A00176517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DB02CE2A95DB4400176517 /* ViewModel.swift in Sources */,
+				14DB02D92A96016400176517 /* BeaconRegion.swift in Sources */,
+				140F49C12AB2F5D800FF302D /* VBeaconModel.swift in Sources */,
+				14DB029E2A94973A00176517 /* ViewController.swift in Sources */,
+				14DB029A2A94973A00176517 /* AppDelegate.swift in Sources */,
+				14DB02D72A96014500176517 /* String.swift in Sources */,
+				14DB029C2A94973A00176517 /* SceneDelegate.swift in Sources */,
+				14DB02D52A95FFF700176517 /* Notification.swift in Sources */,
+				14DB02D32A95FAAA00176517 /* WakeUpService.swift in Sources */,
+				14DB02D12A95F6D400176517 /* MistService.swift in Sources */,
+				14DB02CB2A949A5400176517 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DB02A82A94973D00176517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DB02B12A94973D00176517 /* Mist_PoCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DB02B22A94973D00176517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DB02BD2A94973D00176517 /* Mist_PoCUITestsLaunchTests.swift in Sources */,
+				14DB02BB2A94973D00176517 /* Mist_PoCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14DB02AE2A94973D00176517 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14DB02952A94973A00176517 /* Mist-PoC */;
+			targetProxy = 14DB02AD2A94973D00176517 /* PBXContainerItemProxy */;
+		};
+		14DB02B82A94973D00176517 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14DB02952A94973A00176517 /* Mist-PoC */;
+			targetProxy = 14DB02B72A94973D00176517 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14DB029F2A94973A00176517 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14DB02A02A94973A00176517 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14DB02A42A94973C00176517 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14DB02A52A94973C00176517 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14DB02BE2A94973D00176517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14DB02BF2A94973D00176517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14DB02C12A94973D00176517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C56DB7C03DF594D4D20014B /* Pods-Mist-PoC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3P9LUAZ46A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mist-PoC/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = " Mist wants to access the Bluetooth in background ";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = " Mist wants to access the Bluetooth ";
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = " Mist wants to access the Location services in background ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = " Mist wants to access the Location services ";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.htc.meijer.mistpoc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Meijer-MistPoC";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		14DB02C22A94973D00176517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1FE0F43429B0631D40CC543 /* Pods-Mist-PoC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3P9LUAZ46A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mist-PoC/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = " Mist wants to access the Bluetooth in background ";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = " Mist wants to access the Bluetooth ";
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = " Mist wants to access the Location services in background ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = " Mist wants to access the Location services ";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.htc.meijer.mistpoc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Meijer-MistPoC";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		14DB02C42A94973D00176517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4193FB183357ACF2D4F388 /* Pods-Mist-PoCTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 748CDJ9KNG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "i.Mist-PoCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mist-PoC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mist-PoC";
+			};
+			name = Debug;
+		};
+		14DB02C52A94973D00176517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F1DCBB1C4564F4AB54F592C /* Pods-Mist-PoCTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 748CDJ9KNG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "i.Mist-PoCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mist-PoC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mist-PoC";
+			};
+			name = Release;
+		};
+		14DB02C72A94973D00176517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DDB42772336DA477F0BD027 /* Pods-Mist-PoC-Mist-PoCUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 748CDJ9KNG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "i.Mist-PoCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mist-PoC";
+			};
+			name = Debug;
+		};
+		14DB02C82A94973D00176517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5776EA3E5907FF99A6D3AA5 /* Pods-Mist-PoC-Mist-PoCUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 748CDJ9KNG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "i.Mist-PoCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mist-PoC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14DB02912A94973A00176517 /* Build configuration list for PBXProject "Mist-PoC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DB02BE2A94973D00176517 /* Debug */,
+				14DB02BF2A94973D00176517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14DB02C02A94973D00176517 /* Build configuration list for PBXNativeTarget "Mist-PoC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DB02C12A94973D00176517 /* Debug */,
+				14DB02C22A94973D00176517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14DB02C32A94973D00176517 /* Build configuration list for PBXNativeTarget "Mist-PoCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DB02C42A94973D00176517 /* Debug */,
+				14DB02C52A94973D00176517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14DB02C62A94973D00176517 /* Build configuration list for PBXNativeTarget "Mist-PoCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DB02C72A94973D00176517 /* Debug */,
+				14DB02C82A94973D00176517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		140F49C42AB32FC400FF302D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		140F49C52AB32FC400FF302D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 140F49C42AB32FC400FF302D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		140F49C72AB32FC400FF302D /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 140F49C42AB32FC400FF302D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		140F49C92AB32FC400FF302D /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 140F49C42AB32FC400FF302D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		140F49CB2AB32FC400FF302D /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 140F49C42AB32FC400FF302D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		140F49CD2AB32FC400FF302D /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 140F49C42AB32FC400FF302D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		140F49CF2AB32FC400FF302D /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 140F49C42AB32FC400FF302D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 14DB028E2A94973A00176517 /* Project object */;
+}
